@@ -17,7 +17,7 @@ El instalador:
 - Te pedirá el token de tu bot
 - Configurará todo automáticamente
 
-### 📦 Instalación Manual
+## 📦 Instalación Manual
 
 1. Clona el repositorio:
 ```bash
@@ -49,3 +49,17 @@ echo "BOT_TOKEN=tu_token_aqui" > .env
 1. Inicia el bot:
 ```bash
 ./start.sh
+```
+
+2. Los logs se guardarán en el directorio `logs/`
+
+## 📁 Estructura del Proyecto
+
+```
+BOT/
+├── bot.py           # Lógica principal del bot
+├── config.py        # Configuración y mensajes
+├── logger.py        # Sistema de logging
+├── install.sh       # Script de instalación
+├── logs/            # Directorio de logs
+└── .env            # Archivo de variables de entorno
